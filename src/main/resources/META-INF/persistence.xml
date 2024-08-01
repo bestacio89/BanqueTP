@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence" version="3.0">
+  <persistence-unit name="BanquePersistenceUnit">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.example.Client</class>
+    <class>com.example.Compte</class>
+    <class>com.example.LivretA</class>
+    <class>com.example.AssuranceVie</class>
+    <class>com.example.Operation</class>
+    <class>com.example.Virement</class>
+    <class>com.example.Adresse</class>
+    <class>com.example.Banque</class>
+
+    <properties>
+        <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+        <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/banque"/>
+        <property name="jakarta.persistence.jdbc.user" value="postgres"/>
+        <property name="jakarta.persistence.jdbc.password" value="${DB_PASSWORD}"/>
+        <property name="eclipselink.ddl-generation" value="none"/>
+        <property name="eclipselink.logging.level" value="INFO"/>  </properties>
+  </persistence-unit>
+</persistence>

@@ -6,7 +6,7 @@ import jakarta.persistence.*;
 public class Adresse {
 
 
-    private int numero;
+    private int numerorue;
     private String rue;
     private int codePostal;
     private String ville;
@@ -14,12 +14,12 @@ public class Adresse {
     // Getters and Setters
 
 
-    public int getNumero() {
-        return numero;
+    public int getNumerorue() {
+        return numerorue;
     }
 
     public void setNumero(int numero) {
-        this.numero = numero;
+        this.numerorue = numero;
     }
 
     public String getRue() {

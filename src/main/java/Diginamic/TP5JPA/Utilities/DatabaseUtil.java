@@ -19,7 +19,7 @@ import java.sql.Statement;
 public class DatabaseUtil {
 
     private static final String PERSISTENCE_UNIT_NAME = "BanquePersistenceUnit";
-    private static final String DB_URL = "jdbc:postgresql://localhost:5432/library"; // Update with your PostgreSQL database URL
+    private static final String DB_URL = "jdbc:postgresql://localhost:5432/banque"; // Update with your PostgreSQL database URL
     private static final String DB_USER = "postgres"; // Update with your database user
     private static final String DB_PASSWORD = "Bl@dg3r$$"; // Update with your database password
     private static final String DB_URL_CREATE = "jdbc:postgresql://localhost:5432/";

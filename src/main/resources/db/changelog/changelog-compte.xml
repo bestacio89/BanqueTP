@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <!-- Create table -->
+    <changeSet id="1" author="Bernardo Estacio Abreu">
+        <createTable tableName="compte">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="numero" type="VARCHAR(255)"/>
+            <column name="solde" type="DOUBLE"/>
+            <column name="livretA_id" type="BIGINT"/>
+            <column name="assuranceVie_id" type="BIGINT"/>
+            <column name="banque_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+
+    <!-- Add foreign key constraints -->
+    <changeSet id="2" author="your_name">
+        <addForeignKeyConstraint
+            baseTableName="compte"
+            baseColumnNames="livretA_id"
+            constraintName="FK_compte_livretA"
+            referencedTableName="livretA"
+            referencedColumnNames="id"/>
+
+        <addForeignKeyConstraint
+            baseTableName="compte"
+            baseColumnNames="assuranceVie_id"
+            constraintName="FK_compte_assuranceVie"
+            referencedTableName="assuranceVie"
+            referencedColumnNames="id"/>
+
+        <addForeignKeyConstraint
+            baseTableName="compte"
+            baseColumnNames="banque_id"
+            constraintName="FK_compte_banque"
+            referencedTableName="banque"
+            referencedColumnNames="id"/>
+    </changeSet>
+
+</databaseChangeLog>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="1" author="your_name">
+        <createTable tableName="operation">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="date" type="TIMESTAMP"/>
+            <column name="montant" type="DOUBLE"/>
+            <column name="motif" type="VARCHAR(255)"/>
+            <column name="compte_id" type="BIGINT"/>
+            <column name="virement_id" type="BIGINT"/>
+        </createTable>
+
+        <addForeignKeyConstraint baseTableName="operation"
+                                 baseColumnNames="compte_id"
+                                 constraintName="FK_operation_compte"
+                                 referencedTableName="compte"
+                                 referencedColumnNames="id"/>
+        <addForeignKeyConstraint baseTableName="operation"
+                                 baseColumnNames="virement_id"
+                                 constraintName="FK_operation_virement"
+                                 referencedTableName="virement"
+                                 referencedColumnNames="id"/>
+    </changeSet>
+
+</databaseChangeLog>

@@ -3,6 +3,7 @@ package Diginamic.TP5JPA.BusinessObject;
 import jakarta.persistence.*;
 
 @Entity
+@Table(name = "livretA")
 public class LivretA {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

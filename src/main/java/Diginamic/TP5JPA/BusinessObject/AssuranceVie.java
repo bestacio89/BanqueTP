@@ -4,10 +4,12 @@ import jakarta.persistence.*;
 import java.time.LocalDate;
 
 @Entity
+@Table(name = "assuranceVie")
 public class AssuranceVie {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(name = "dateFin")
     private LocalDate dateFin;
     private double taux;
 

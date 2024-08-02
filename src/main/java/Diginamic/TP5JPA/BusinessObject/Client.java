@@ -15,8 +15,13 @@ public class Client {
     private LocalDate dateNaissance;
 
     @Embedded
+    @AttributeOverrides({
+        @AttributeOverride(name = "numerorue", column = @Column(name = "adresse_numerorue")),
+        @AttributeOverride(name = "rue", column = @Column(name = "adresse_rue")),
+        @AttributeOverride(name = "codePostal", column = @Column(name = "adresse_codepostal")),
+        @AttributeOverride(name = "ville", column = @Column(name = "adresse_ville"))
+    })
     private Adresse adresse;
-
 
     @ManyToMany
     @JoinTable(
@@ -57,6 +62,14 @@ public class Client {
 
     public void setDateNaissance(LocalDate dateNaissance) {
         this.dateNaissance = dateNaissance;
+    }
+
+    public Adresse getAdresse() {
+        return adresse;
+    }
+
+    public void setAdresse(Adresse adresse) {
+        this.adresse = adresse;
     }
 
     public List<Compte> getComptes() {

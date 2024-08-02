@@ -1,25 +1,30 @@
 package Diginamic.TP5JPA.BusinessObject;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Embeddable;
 
 @Embeddable
 public class Adresse {
-
-
     private int numerorue;
     private String rue;
     private int codePostal;
     private String ville;
 
+    public Adresse() {}
+
+    public Adresse(int numerorue, String rue, int codePostal, String ville) {
+        this.numerorue = numerorue;
+        this.rue = rue;
+        this.codePostal = codePostal;
+        this.ville = ville;
+    }
+
     // Getters and Setters
-
-
     public int getNumerorue() {
         return numerorue;
     }
 
-    public void setNumero(int numero) {
-        this.numerorue = numero;
+    public void setNumerorue(int numerorue) {
+        this.numerorue = numerorue;
     }
 
     public String getRue() {
@@ -44,5 +49,10 @@ public class Adresse {
 
     public void setVille(String ville) {
         this.ville = ville;
+    }
+
+    @Override
+    public String toString() {
+        return numerorue + " " + rue + ", " + codePostal + " " + ville;
     }
 }

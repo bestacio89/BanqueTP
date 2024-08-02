@@ -1,7 +1,6 @@
 package Diginamic.TP5JPA.BusinessObject;
 
 import jakarta.persistence.*;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,15 +15,24 @@ public class Compte {
     private double solde;
 
     @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "livretaid")
     private LivretA livretA;
 
+
     @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "assurancevieid")
     private AssuranceVie assuranceVie;
 
     @OneToMany(mappedBy = "compte", cascade = CascadeType.ALL)
     private List<Operation> operations = new ArrayList<>();
 
     @Embedded
+    @AttributeOverrides({
+        @AttributeOverride(name = "numerorue", column = @Column(name = "numerorue")),
+        @AttributeOverride(name = "rue", column = @Column(name = "rue")),
+        @AttributeOverride(name = "codePostal", column = @Column(name = "codepostal")),
+        @AttributeOverride(name = "ville", column = @Column(name = "ville"))
+    })
     private Adresse adresse;
 
     @OneToOne(cascade = CascadeType.ALL)

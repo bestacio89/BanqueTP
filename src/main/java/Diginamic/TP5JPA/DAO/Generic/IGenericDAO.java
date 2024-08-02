@@ -1,4 +1,4 @@
-package Diginamic.TP5JPA.DAO;
+package Diginamic.TP5JPA.DAO.Generic;
 
 import java.util.List;
 

@@ -1,7 +1,7 @@
 package Diginamic.TP5JPA.UI;
 
 import Diginamic.TP5JPA.BusinessObject.*;
-import Diginamic.TP5JPA.DAO.CompteDAO;
+import Diginamic.TP5JPA.DAO.Specific.CompteDAO;
 
 import javax.swing.*;
 import java.awt.*;

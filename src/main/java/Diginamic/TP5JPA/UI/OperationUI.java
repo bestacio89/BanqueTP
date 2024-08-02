@@ -1,9 +1,9 @@
 package Diginamic.TP5JPA.UI;
 
 import Diginamic.TP5JPA.BusinessObject.Operation;
-import Diginamic.TP5JPA.DAO.CompteDAO;
-import Diginamic.TP5JPA.DAO.OperationDAO;
-import Diginamic.TP5JPA.DAO.VirementDAO;
+import Diginamic.TP5JPA.DAO.Specific.CompteDAO;
+import Diginamic.TP5JPA.DAO.Specific.OperationDAO;
+import Diginamic.TP5JPA.DAO.Specific.VirementDAO;
 
 import javax.swing.*;
 import java.awt.*;

@@ -1,7 +1,7 @@
 package Diginamic.TP5JPA.UI;
 
 import Diginamic.TP5JPA.BusinessObject.Banque;
-import Diginamic.TP5JPA.DAO.BanqueDAO;
+import Diginamic.TP5JPA.DAO.Specific.BanqueDAO;
 
 import javax.swing.*;
 import java.awt.*;

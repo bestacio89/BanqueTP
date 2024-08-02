@@ -1,8 +1,7 @@
-package Diginamic.TP5JPA.DAO;
+package Diginamic.TP5JPA.DAO.Generic;
 
 import Diginamic.TP5JPA.Utilities.DatabaseUtil;
 import jakarta.persistence.EntityManager;
-import jakarta.persistence.PersistenceContext;
 import jakarta.transaction.Transactional;
 import java.util.List;
 

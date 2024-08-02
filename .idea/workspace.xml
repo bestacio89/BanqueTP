@@ -6,8 +6,25 @@
   <component name="ChangeListManager">
     <list default="true" id="cc2f345b-f16a-4844-8c2c-212c2cf9dfba" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/BusinessObject/Adresse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/BusinessObject/Adresse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/BusinessObject/AssuranceVie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/BusinessObject/AssuranceVie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/BusinessObject/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/BusinessObject/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/BusinessObject/Compte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/BusinessObject/Compte.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/Utilities/DatabaseUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/Utilities/DatabaseUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/BusinessObject/LivretA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/BusinessObject/LivretA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/DAO/OperationDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/DAO/OperationDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/UI/BanqueUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/UI/BanqueUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/UI/ClientUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/UI/ClientUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/UI/CompteUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/UI/CompteUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/UI/MainUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/UI/MainUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/UI/OperationUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/UI/OperationUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/changelog/changelog-assurancevie.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/changelog-assurancevie.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/changelog/changelog-banque.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/changelog-banque.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/changelog/changelog-client.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/changelog-client.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/changelog/changelog-compte.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/changelog-compte.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/changelog/changelog-livreta.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/changelog-livreta.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/changelog/changelog-master.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/changelog-master.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/changelog/changelog-operation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/changelog-operation.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

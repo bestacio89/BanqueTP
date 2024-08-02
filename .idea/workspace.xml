@@ -6,23 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cc2f345b-f16a-4844-8c2c-212c2cf9dfba" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/BusinessObject/Adresse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/BusinessObject/ValueObject/Adresse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/BusinessObject/AssuranceVie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/BusinessObject/Comptes/AssuranceVie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/BusinessObject/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/BusinessObject/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/BusinessObject/Compte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/BusinessObject/Comptes/Compte.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/BusinessObject/LivretA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/BusinessObject/Comptes/LivretA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/BusinessObject/Operation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/BusinessObject/Comptes/Operations/Operation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/BusinessObject/Virement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/BusinessObject/Comptes/Operations/Virement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/DAO/Specific/AssuranceVieDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/DAO/Specific/Comptes/AssuranceVieDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/DAO/Specific/CompteDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/DAO/Specific/Comptes/CompteDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/DAO/Specific/LivretADAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/DAO/Specific/Comptes/LivretADAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/DAO/Specific/OperationDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/DAO/Specific/Comptes/Operations/OperationDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/DAO/Specific/VirementDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/DAO/Specific/Comptes/Operations/VirementDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/UI/ClientUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/UI/ClientUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/UI/CompteUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/UI/CompteUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/UI/MainUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/UI/MainUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/UI/OperationUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/UI/OperationUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,19 +34,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.MainUI.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.BanqueTP [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.BanqueTP [install].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;B:/JavaRepos/BanqueTP/src/main/java/Diginamic/TP5JPA/Main.java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.externalResources&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.MainUI.executor": "Run",
+    "Maven.BanqueTP [clean].executor": "Run",
+    "Maven.BanqueTP [install].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "B:/JavaRepos/BanqueTP/src/main/java/Diginamic/TP5JPA/Main.java",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="B:\JavaRepos\BanqueTP\src\main\resources\META-INF" />

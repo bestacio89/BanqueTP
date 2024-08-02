@@ -9,18 +9,14 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.List;
 
-public class BanqueUI {
-    private JFrame frame;
+public class BanqueUI extends JPanel {
     private JTextField txtNom;
     private JTextArea txtBanqueList;
     private BanqueDAO banqueDAO;
 
     public BanqueUI() {
         banqueDAO = new BanqueDAO();
-        frame = new JFrame("Banque Management");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(600, 400);
-        frame.setLayout(new BorderLayout());
+        setLayout(new BorderLayout());
 
         JPanel panel = new JPanel();
         panel.setLayout(new GridLayout(2, 2));
@@ -38,22 +34,13 @@ public class BanqueUI {
         });
         panel.add(btnSave);
 
-        JButton btnLoad = new JButton("Load");
-        btnLoad.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                loadBanques();
-            }
-        });
-        panel.add(btnLoad);
-
         txtBanqueList = new JTextArea();
         txtBanqueList.setEditable(false);
 
-        frame.add(panel, BorderLayout.NORTH);
-        frame.add(new JScrollPane(txtBanqueList), BorderLayout.CENTER);
+        add(panel, BorderLayout.NORTH);
+        add(new JScrollPane(txtBanqueList), BorderLayout.CENTER);
 
-        frame.setVisible(true);
+        loadBanques();
     }
 
     private void saveBanque() {
@@ -63,7 +50,8 @@ public class BanqueUI {
         banque.setNom(nom);
 
         banqueDAO.save(banque);
-        JOptionPane.showMessageDialog(frame, "Banque saved successfully!");
+        JOptionPane.showMessageDialog(this, "Banque saved successfully!");
+        loadBanques(); // Refresh list after saving
     }
 
     private void loadBanques() {

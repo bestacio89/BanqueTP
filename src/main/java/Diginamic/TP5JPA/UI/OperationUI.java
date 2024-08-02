@@ -12,13 +12,13 @@ import java.awt.event.ActionListener;
 import java.time.LocalDateTime;
 import java.util.List;
 
-public class OperationUI {
-    private JFrame frame;
+public class OperationUI extends JPanel {
     private JTextField txtDate;
     private JTextField txtMontant;
     private JTextField txtMotif;
     private JTextField txtCompteId;
     private JTextField txtVirementId;
+    private JTextField txtSearchAccountId;
     private JTextArea txtOperationList;
     private OperationDAO operationDAO;
     private CompteDAO compteDAO;
@@ -29,13 +29,10 @@ public class OperationUI {
         compteDAO = new CompteDAO();
         virementDAO = new VirementDAO();
 
-        frame = new JFrame("Operation Management");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(600, 400);
-        frame.setLayout(new BorderLayout());
+        setLayout(new BorderLayout());
 
         JPanel panel = new JPanel();
-        panel.setLayout(new GridLayout(5, 2));
+        panel.setLayout(new GridLayout(6, 2));
 
         panel.add(new JLabel("Date (YYYY-MM-DD HH:MM:SS):"));
         txtDate = new JTextField();
@@ -56,6 +53,10 @@ public class OperationUI {
         panel.add(new JLabel("Virement ID:"));
         txtVirementId = new JTextField();
         panel.add(txtVirementId);
+
+        panel.add(new JLabel("Search Account ID:"));
+        txtSearchAccountId = new JTextField();
+        panel.add(txtSearchAccountId);
 
         JButton btnSave = new JButton("Save");
         btnSave.addActionListener(new ActionListener() {
@@ -78,37 +79,42 @@ public class OperationUI {
         txtOperationList = new JTextArea();
         txtOperationList.setEditable(false);
 
-        frame.add(panel, BorderLayout.NORTH);
-        frame.add(new JScrollPane(txtOperationList), BorderLayout.CENTER);
-
-        frame.setVisible(true);
+        add(panel, BorderLayout.NORTH);
+        add(new JScrollPane(txtOperationList), BorderLayout.CENTER);
     }
 
     private void saveOperation() {
-        LocalDateTime date = LocalDateTime.parse(txtDate.getText());
-        double montant = Double.parseDouble(txtMontant.getText());
-        String motif = txtMotif.getText();
-        Long compteId = Long.parseLong(txtCompteId.getText());
-        Long virementId = Long.parseLong(txtVirementId.getText());
+        try {
+            LocalDateTime date = LocalDateTime.parse(txtDate.getText());
+            double montant = Double.parseDouble(txtMontant.getText());
+            String motif = txtMotif.getText();
+            Long compteId = Long.parseLong(txtCompteId.getText());
+            Long virementId = Long.parseLong(txtVirementId.getText());
 
-        Operation operation = new Operation();
-        operation.setDate(date);
-        operation.setMontant(montant);
-        operation.setMotif(motif);
-        operation.setCompte(compteDAO.findById(compteId));
-        operation.setVirement(virementDAO.findById(virementId));
+            Operation operation = new Operation();
+            operation.setDate(date);
+            operation.setMontant(montant);
+            operation.setMotif(motif);
+            operation.setCompte(compteDAO.findById(compteId));
+            operation.setVirement(virementDAO.findById(virementId));
 
-        operationDAO.save(operation);
-        JOptionPane.showMessageDialog(frame, "Operation saved successfully!");
-    }
-
-    private void loadOperations() {
-        List<Operation> operations = operationDAO.findAll();
-        txtOperationList.setText("");
-        for (Operation operation : operations) {
-            txtOperationList.append(operation.getDate() + " " + operation.getMontant() + " " + operation.getMotif() + "\n");
+            operationDAO.save(operation);
+            JOptionPane.showMessageDialog(this, "Operation saved successfully!");
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Error saving operation: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
 
-
+    private void loadOperations() {
+        try {
+            Long accountId = Long.parseLong(txtSearchAccountId.getText());
+            List<Operation> operations = operationDAO.findByAccountId(accountId);
+            txtOperationList.setText("");
+            for (Operation operation : operations) {
+                txtOperationList.append(operation.getDate() + " " + operation.getMontant() + " " + operation.getMotif() + "\n");
+            }
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Error loading operations: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+        }
+    }
 }

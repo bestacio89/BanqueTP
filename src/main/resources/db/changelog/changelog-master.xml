@@ -12,6 +12,7 @@
     <include file="db/changelog/changelog-virement.xml"/>
     <include file="db/changelog/changelog-compte.xml"/>
     <include file="db/changelog/changelog-operation.xml"/>
+    <include file="db/changelog/changelog-seed.xml"/>
 
 
 

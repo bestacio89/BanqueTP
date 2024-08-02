@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <!-- Seed data for banque table -->
+    <changeSet id="seed-1" author="Bernardo Estacio Abreu">
+        <insert tableName="banque">
+            <column name="id" value="1"/>
+            <column name="nom" value="Banque de France"/>
+        </insert>
+        <insert tableName="banque">
+            <column name="id" value="2"/>
+            <column name="nom" value="Crédit Agricole"/>
+        </insert>
+        <!-- Add more banks if needed -->
+    </changeSet>
+
+    <!-- Seed data for client table -->
+    <changeSet id="seed-2" author="Bernardo Estacio Abreu">
+        <insert tableName="client">
+            <column name="id" value="1"/>
+            <column name="nom" value="Dupont"/>
+            <column name="prenom" value="Jean"/>
+            <column name="datenaissance" value="1980-01-15"/>
+            <column name="adresse_numerorue" value="12"/>
+            <column name="adresse_rue" value="Rue de la Paix"/>
+            <column name="adresse_codepostal" value="75001"/>
+            <column name="adresse_ville" value="Paris"/>
+        </insert>
+        <insert tableName="client">
+            <column name="id" value="2"/>
+            <column name="nom" value="Martin"/>
+            <column name="prenom" value="Claire"/>
+            <column name="datenaissance" value="1990-06-25"/>
+            <column name="adresse_numerorue" value="34"/>
+            <column name="adresse_rue" value="Avenue des Champs-Élysées"/>
+            <column name="adresse_codepostal" value="75008"/>
+            <column name="adresse_ville" value="Paris"/>
+        </insert>
+        <!-- Add more clients up to 30 -->
+    </changeSet>
+
+    <!-- Seed data for livretA table -->
+    <changeSet id="seed-3" author="Bernardo Estacio Abreu">
+        <insert tableName="livreta">
+            <column name="id" value="1"/>
+            <column name="taux" value="0.75"/>
+        </insert>
+        <insert tableName="livreta">
+            <column name="id" value="2"/>
+            <column name="taux" value="0.50"/>
+        </insert>
+        <!-- Add more livretA entries if needed -->
+    </changeSet>
+
+    <!-- Seed data for assuranceVie table -->
+    <changeSet id="seed-4" author="Bernardo Estacio Abreu">
+        <insert tableName="assurancevie">
+            <column name="id" value="1"/>
+            <column name="datefin" value="2025-12-31"/>
+            <column name="taux" value="2.0"/>
+        </insert>
+        <insert tableName="assurancevie">
+            <column name="id" value="2"/>
+            <column name="datefin" value="2023-12-31"/>
+            <column name="taux" value="1.5"/>
+        </insert>
+        <!-- Add more assuranceVie entries if needed -->
+    </changeSet>
+
+    <!-- Seed data for virement table -->
+    <changeSet id="seed-5" author="Bernardo Estacio Abreu">
+        <insert tableName="virement">
+            <column name="id" value="1"/>
+            <column name="beneficiaire" value="John Doe"/>
+        </insert>
+        <insert tableName="virement">
+            <column name="id" value="2"/>
+            <column name="beneficiaire" value="Jane Smith"/>
+        </insert>
+        <!-- Add more virements as needed -->
+    </changeSet>
+
+    <!-- Seed data for compte table -->
+    <changeSet id="seed-6" author="Bernardo Estacio Abreu">
+        <insert tableName="compte">
+            <column name="id" value="1"/>
+            <column name="numero" value="FR761234598765"/>
+            <column name="solde" value="1500.00"/>
+            <column name="banque_id" value="1"/>
+            <column name="livretaid" value="1"/>
+            <column name="assurancevieid" value="1"/>
+            <column name="numerorue" value="12"/>
+            <column name="rue" value="Rue de la Paix"/>
+            <column name="codepostal" value="75001"/>
+            <column name="ville" value="Paris"/>
+        </insert>
+        <insert tableName="compte">
+            <column name="id" value="2"/>
+            <column name="numero" value="FR761234598766"/>
+            <column name="solde" value="2500.00"/>
+            <column name="banque_id" value="2"/>
+            <column name="livretaid" value="2"/>
+            <column name="assurancevieid" value="2"/>
+            <column name="numerorue" value="34"/>
+            <column name="rue" value="Avenue des Champs-Élysées"/>
+            <column name="codepostal" value="75008"/>
+            <column name="ville" value="Paris"/>
+        </insert>
+        <!-- Add more accounts as needed -->
+    </changeSet>
+
+    <!-- Seed data for operation table -->
+    <changeSet id="seed-7" author="Bernardo Estacio Abreu">
+        <insert tableName="operation">
+            <column name="id" value="1"/>
+            <column name="date" value="2023-01-15 12:00:00"/>
+            <column name="montant" value="100.00"/>
+            <column name="motif" value="Deposit"/>
+            <column name="compte_id" value="1"/>
+            <column name="virement_id" value="1"/>
+        </insert>
+        <insert tableName="operation">
+            <column name="id" value="2"/>
+            <column name="date" value="2023-02-20 14:30:00"/>
+            <column name="montant" value="200.00"/>
+            <column name="motif" value="Withdrawal"/>
+            <column name="compte_id" value="2"/>
+            <column name="virement_id" value="2"/>
+        </insert>
+        <!-- Add more operations as needed -->
+    </changeSet>
+
+</databaseChangeLog>

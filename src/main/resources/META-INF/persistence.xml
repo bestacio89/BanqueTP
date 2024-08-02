@@ -2,14 +2,14 @@
 <persistence xmlns="https://jakarta.ee/xml/ns/persistence" version="3.0">
   <persistence-unit name="BanquePersistenceUnit">
     <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-    <class>com.example.Client</class>
-    <class>com.example.Compte</class>
-    <class>com.example.LivretA</class>
-    <class>com.example.AssuranceVie</class>
-    <class>com.example.Operation</class>
-    <class>com.example.Virement</class>
-    <class>com.example.Adresse</class>
-    <class>com.example.Banque</class>
+    <class>Diginamic.TP5JPA.BusinessObject.Client</class>
+    <class>Diginamic.TP5JPA.BusinessObject.Compte</class>
+    <class>Diginamic.TP5JPA.BusinessObject.LivretA</class>
+    <class>Diginamic.TP5JPA.BusinessObject.AssuranceVie</class>
+    <class>Diginamic.TP5JPA.BusinessObject.Operation</class>
+    <class>Diginamic.TP5JPA.BusinessObject.Virement</class>
+    <class>Diginamic.TP5JPA.BusinessObject.Adresse</class>
+    <class>Diginamic.TP5JPA.BusinessObject.Banque</class>
 
     <properties>
         <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>

@@ -13,26 +13,32 @@
             </column>
             <column name="numero" type="VARCHAR(255)"/>
             <column name="solde" type="DOUBLE"/>
-            <column name="livretA_id" type="BIGINT"/>
-            <column name="assuranceVie_id" type="BIGINT"/>
+            <column name="livretaid" type="BIGINT"/>
+            <column name="assurancevieid" type="BIGINT"/>
             <column name="banque_id" type="BIGINT"/>
+
+            <!-- Adresse fields -->
+            <column name="numerorue" type="INT"/>
+            <column name="rue" type="VARCHAR(255)"/>
+            <column name="codepostal" type="INT"/>
+            <column name="ville" type="VARCHAR(255)"/>
         </createTable>
     </changeSet>
 
     <!-- Add foreign key constraints -->
-    <changeSet id="2" author="your_name">
+    <changeSet id="2" author="Bernardo Estacio Abreu">
         <addForeignKeyConstraint
             baseTableName="compte"
-            baseColumnNames="livretA_id"
-            constraintName="FK_compte_livretA"
-            referencedTableName="livretA"
+            baseColumnNames="livretaid"
+            constraintName="FK_compte_livreta"
+            referencedTableName="livreta"
             referencedColumnNames="id"/>
 
         <addForeignKeyConstraint
             baseTableName="compte"
-            baseColumnNames="assuranceVie_id"
-            constraintName="FK_compte_assuranceVie"
-            referencedTableName="assuranceVie"
+            baseColumnNames="assurancevieid"
+            constraintName="FK_compte_assurancevie"
+            referencedTableName="assurancevie"
             referencedColumnNames="id"/>
 
         <addForeignKeyConstraint

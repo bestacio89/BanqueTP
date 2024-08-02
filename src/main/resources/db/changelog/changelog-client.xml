@@ -12,12 +12,13 @@
             </column>
             <column name="nom" type="VARCHAR(255)"/>
             <column name="prenom" type="VARCHAR(255)"/>
-            <column name="date_naissance" type="DATE"/>
+            <column name="datenaissance" type="DATE"/>
 
             <!-- Embedded Adresse Fields -->
-            <column name="adresse_street" type="VARCHAR(255)"/>
-            <column name="adresse_city" type="VARCHAR(255)"/>
-            <column name="adresse_postalCode" type="VARCHAR(20)"/>
+            <column name="adresse_numerorue" type="INT"/>
+            <column name="adresse_rue" type="VARCHAR(255)"/>
+            <column name="adresse_codepostal" type="INT"/>
+            <column name="adresse_ville" type="VARCHAR(255)"/>
         </createTable>
     </changeSet>
 

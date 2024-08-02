@@ -1,9 +1,9 @@
-package Diginamic.TP5JPA.UI;
+package Diginamic.TP5JPA.UI.Comptes.Operations;
 
-import Diginamic.TP5JPA.BusinessObject.Operation;
-import Diginamic.TP5JPA.DAO.Specific.CompteDAO;
-import Diginamic.TP5JPA.DAO.Specific.OperationDAO;
-import Diginamic.TP5JPA.DAO.Specific.VirementDAO;
+import Diginamic.TP5JPA.BusinessObject.Comptes.Operations.Operation;
+import Diginamic.TP5JPA.DAO.Specific.Comptes.CompteDAO;
+import Diginamic.TP5JPA.DAO.Specific.Comptes.Operations.OperationDAO;
+import Diginamic.TP5JPA.DAO.Specific.Comptes.Operations.VirementDAO;
 
 import javax.swing.*;
 import java.awt.*;
@@ -46,7 +46,7 @@ public class OperationUI extends JPanel {
         txtMotif = new JTextField();
         panel.add(txtMotif);
 
-        panel.add(new JLabel("Compte ID:"));
+        panel.add(new JLabel("Comptes ID:"));
         txtCompteId = new JTextField();
         panel.add(txtCompteId);
 

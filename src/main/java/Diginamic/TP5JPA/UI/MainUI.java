@@ -1,5 +1,7 @@
 package Diginamic.TP5JPA.UI;
 
+import Diginamic.TP5JPA.UI.Comptes.CompteUI;
+import Diginamic.TP5JPA.UI.Comptes.Operations.OperationUI;
 import Diginamic.TP5JPA.Utilities.DatabaseUtil;
 
 import javax.swing.*;
@@ -29,7 +31,7 @@ public class MainUI {
         // Create and add tabs for each entity
         tabbedPane.addTab("Client", new ClientUI());
         tabbedPane.addTab("Banque", new BanqueUI());
-        tabbedPane.addTab("Compte", new CompteUI());
+        tabbedPane.addTab("Comptes", new CompteUI());
         tabbedPane.addTab("Operation", new OperationUI()); // Update to use OperationUI panel
 
         frame.add(tabbedPane, BorderLayout.CENTER);

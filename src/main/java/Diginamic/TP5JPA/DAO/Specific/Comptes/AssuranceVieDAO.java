@@ -1,6 +1,7 @@
-package Diginamic.TP5JPA.DAO.Specific;
+package Diginamic.TP5JPA.DAO.Specific.Comptes;
 
-import Diginamic.TP5JPA.BusinessObject.AssuranceVie;
+
+import Diginamic.TP5JPA.BusinessObject.Comptes.AssuranceVie;
 import Diginamic.TP5JPA.DAO.Generic.GenericDAO;
 import jakarta.enterprise.context.ApplicationScoped;
 

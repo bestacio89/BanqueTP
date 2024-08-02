@@ -3,12 +3,12 @@
   <persistence-unit name="BanquePersistenceUnit">
     <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
     <class>Diginamic.TP5JPA.BusinessObject.Client</class>
-    <class>Diginamic.TP5JPA.BusinessObject.Compte</class>
-    <class>Diginamic.TP5JPA.BusinessObject.LivretA</class>
-    <class>Diginamic.TP5JPA.BusinessObject.AssuranceVie</class>
-    <class>Diginamic.TP5JPA.BusinessObject.Operation</class>
-    <class>Diginamic.TP5JPA.BusinessObject.Virement</class>
-    <class>Diginamic.TP5JPA.BusinessObject.Adresse</class>
+    <class>Diginamic.TP5JPA.BusinessObject.Comptes.Compte</class>
+    <class>Diginamic.TP5JPA.BusinessObject.Comptes.LivretA</class>
+    <class>Diginamic.TP5JPA.BusinessObject.Comptes.AssuranceVie</class>
+    <class>Diginamic.TP5JPA.BusinessObject.Comptes.Operations.Operation</class>
+    <class>Diginamic.TP5JPA.BusinessObject.Comptes.Operations.Virement</class>
+    <class>Diginamic.TP5JPA.BusinessObject.ValueObject.Adresse</class>
     <class>Diginamic.TP5JPA.BusinessObject.Banque</class>
 
     <properties>

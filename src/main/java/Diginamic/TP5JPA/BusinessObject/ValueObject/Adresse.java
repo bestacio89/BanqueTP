@@ -1,4 +1,4 @@
-package Diginamic.TP5JPA.BusinessObject;
+package Diginamic.TP5JPA.BusinessObject.ValueObject;
 
 import jakarta.persistence.Embeddable;
 

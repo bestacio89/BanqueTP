@@ -1,5 +1,9 @@
-package Diginamic.TP5JPA.BusinessObject;
+package Diginamic.TP5JPA.BusinessObject.Comptes;
 
+import Diginamic.TP5JPA.BusinessObject.ValueObject.Adresse;
+import Diginamic.TP5JPA.BusinessObject.Banque;
+import Diginamic.TP5JPA.BusinessObject.Client;
+import Diginamic.TP5JPA.BusinessObject.Comptes.Operations.Operation;
 import jakarta.persistence.*;
 import java.util.ArrayList;
 import java.util.List;

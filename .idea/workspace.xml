@@ -6,19 +6,23 @@
   <component name="ChangeListManager">
     <list default="true" id="cc2f345b-f16a-4844-8c2c-212c2cf9dfba" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/DAO/AssuranceVieDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/DAO/Specific/AssuranceVieDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/DAO/BanqueDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/DAO/Specific/BanqueDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/DAO/ClientDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/DAO/Specific/ClientDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/DAO/CompteDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/DAO/Specific/CompteDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/DAO/GenericDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/DAO/Generic/GenericDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/DAO/IGenericDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/DAO/Generic/IGenericDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/DAO/LivretADAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/DAO/Specific/LivretADAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/DAO/OperationDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/DAO/Specific/OperationDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/DAO/VirementDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/DAO/Specific/VirementDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/UI/BanqueUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/UI/BanqueUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/BusinessObject/Adresse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/BusinessObject/ValueObject/Adresse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/BusinessObject/AssuranceVie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/BusinessObject/Comptes/AssuranceVie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/BusinessObject/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/BusinessObject/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/BusinessObject/Compte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/BusinessObject/Comptes/Compte.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/BusinessObject/LivretA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/BusinessObject/Comptes/LivretA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/BusinessObject/Operation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/BusinessObject/Comptes/Operations/Operation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/BusinessObject/Virement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/BusinessObject/Comptes/Operations/Virement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/DAO/Specific/AssuranceVieDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/DAO/Specific/Comptes/AssuranceVieDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/DAO/Specific/CompteDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/DAO/Specific/Comptes/CompteDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/DAO/Specific/LivretADAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/DAO/Specific/Comptes/LivretADAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/DAO/Specific/OperationDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/DAO/Specific/Comptes/Operations/OperationDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/DAO/Specific/VirementDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/DAO/Specific/Comptes/Operations/VirementDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/UI/ClientUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/UI/ClientUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/UI/CompteUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/UI/CompteUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/UI/MainUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/UI/MainUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/UI/OperationUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diginamic/TP5JPA/UI/OperationUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +77,7 @@
       <module name="BanqueTP" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Diginamic.TP5JPA.UI.*" />
+          <option name="PATTERN" value="Diginamic.TP5JPA.UI.Comptes.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>

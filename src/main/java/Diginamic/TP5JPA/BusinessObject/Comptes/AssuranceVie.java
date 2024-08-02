@@ -1,4 +1,4 @@
-package Diginamic.TP5JPA.BusinessObject;
+package Diginamic.TP5JPA.BusinessObject.Comptes;
 
 import jakarta.persistence.*;
 import java.time.LocalDate;

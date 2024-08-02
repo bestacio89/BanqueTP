@@ -1,5 +1,7 @@
 package Diginamic.TP5JPA.BusinessObject;
 
+import Diginamic.TP5JPA.BusinessObject.Comptes.Compte;
+import Diginamic.TP5JPA.BusinessObject.ValueObject.Adresse;
 import jakarta.persistence.*;
 import java.time.LocalDate;
 import java.util.ArrayList;

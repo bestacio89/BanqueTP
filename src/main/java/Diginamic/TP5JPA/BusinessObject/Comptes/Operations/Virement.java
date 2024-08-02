@@ -1,14 +1,13 @@
-package Diginamic.TP5JPA.BusinessObject;
+package Diginamic.TP5JPA.BusinessObject.Comptes.Operations;
 
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "livretA")
-public class LivretA {
+public class Virement {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private double taux;
+    private String beneficiaire;
 
     // Getters and Setters
     public Long getId() {
@@ -19,11 +18,11 @@ public class LivretA {
         this.id = id;
     }
 
-    public double getTaux() {
-        return taux;
+    public String getBeneficiaire() {
+        return beneficiaire;
     }
 
-    public void setTaux(double taux) {
-        this.taux = taux;
+    public void setBeneficiaire(String beneficiaire) {
+        this.beneficiaire = beneficiaire;
     }
 }

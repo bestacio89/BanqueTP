@@ -1,6 +1,6 @@
-package Diginamic.TP5JPA.DAO.Specific;
+package Diginamic.TP5JPA.DAO.Specific.Comptes.Operations;
 
-import Diginamic.TP5JPA.BusinessObject.Operation;
+import Diginamic.TP5JPA.BusinessObject.Comptes.Operations.Operation;
 import Diginamic.TP5JPA.DAO.Generic.GenericDAO;
 import Diginamic.TP5JPA.Utilities.DatabaseUtil;
 import jakarta.persistence.EntityManager;

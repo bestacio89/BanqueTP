@@ -1,8 +1,10 @@
 package Diginamic.TP5JPA.UI;
 
 import Diginamic.TP5JPA.BusinessObject.*;
+import Diginamic.TP5JPA.BusinessObject.Comptes.Compte;
+import Diginamic.TP5JPA.BusinessObject.ValueObject.Adresse;
 import Diginamic.TP5JPA.DAO.Specific.ClientDAO;
-import Diginamic.TP5JPA.DAO.Specific.CompteDAO;
+import Diginamic.TP5JPA.DAO.Specific.Comptes.CompteDAO;
 
 import javax.swing.*;
 import java.awt.*;
@@ -97,7 +99,7 @@ public class ClientUI extends JPanel {
         String[] compteIds = comptesField.getText().split(",");
         for (String id : compteIds) {
             Long compteId = Long.parseLong(id.trim());
-            Compte compte = findCompteById(compteId); // Implement this method to fetch Compte from the database
+            Compte compte = findCompteById(compteId); // Implement this method to fetch Comptes from the database
             if (compte != null) {
                 comptes.add(compte);
             }
@@ -116,7 +118,7 @@ public class ClientUI extends JPanel {
     }
 
     private Compte findCompteById(Long compteId) {
-        // Implement database lookup for Compte by ID
+        // Implement database lookup for Comptes by ID
         return compteDAO.findById(compteId);
     }
 

@@ -1,7 +1,11 @@
-package Diginamic.TP5JPA.UI;
+package Diginamic.TP5JPA.UI.Comptes;
 
 import Diginamic.TP5JPA.BusinessObject.*;
-import Diginamic.TP5JPA.DAO.Specific.CompteDAO;
+import Diginamic.TP5JPA.BusinessObject.Comptes.AssuranceVie;
+import Diginamic.TP5JPA.BusinessObject.Comptes.Compte;
+import Diginamic.TP5JPA.BusinessObject.Comptes.LivretA;
+import Diginamic.TP5JPA.BusinessObject.ValueObject.Adresse;
+import Diginamic.TP5JPA.DAO.Specific.Comptes.CompteDAO;
 
 import javax.swing.*;
 import java.awt.*;
@@ -131,8 +135,8 @@ public class CompteUI extends JPanel {
         compte.setBanque(banque);
         compte.setClients(clients);
 
-        compteDAO.save(compte); // Implement this method to save Compte to the database
-        JOptionPane.showMessageDialog(this, "Compte saved successfully!");
+        compteDAO.save(compte); // Implement this method to save Comptes to the database
+        JOptionPane.showMessageDialog(this, "Comptes saved successfully!");
         loadComptes(); // Refresh list after saving
     }
 

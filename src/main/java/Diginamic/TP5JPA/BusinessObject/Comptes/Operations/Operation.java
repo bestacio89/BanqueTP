@@ -1,5 +1,6 @@
-package Diginamic.TP5JPA.BusinessObject;
+package Diginamic.TP5JPA.BusinessObject.Comptes.Operations;
 
+import Diginamic.TP5JPA.BusinessObject.Comptes.Compte;
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
